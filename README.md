@@ -10,8 +10,8 @@ This task focuses purely on **frontend design** and **client-side validation**.
 
 ## 📁 Task Link (ApexPlanets Internship)
 
-🔗 **Task 2 – Animated Auth UI (GitHub Repository)**  
-(https://github.com/pvcharan-ui/FUTURE_FS_04_Task2_AuthUI)
+🔗 **Task 2 – Animated Auth UI **  
+http://localhost/FUTURE_FS_04_TASK2/
 
 ---
 
