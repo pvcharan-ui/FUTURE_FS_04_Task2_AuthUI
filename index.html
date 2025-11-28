@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Auth UI | Task 2</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="auth-wrapper">
+
+    <!-- LEFT SIDE INFO PANEL -->
+    <div class="auth-info">
+      <div class="info-content">
+        <h1>Apex Auth</h1>
+        <p class="tagline">Smooth & modern authentication UI for Task 2.</p>
+
+        <p class="desc">
+          This page demonstrates an animated login / register interface
+          using only HTML, CSS and JavaScript. No database – pure UI/UX focus.
+        </p>
+
+        <ul class="highlights">
+          <li>🔥 Animated form switch</li>
+          <li>🛡️ Basic client-side validation</li>
+          <li>👀 Show / hide password</li>
+        </ul>
+      </div>
+
+      <!-- Floating Orbs -->
+      <div class="floating-orb orb-1"></div>
+      <div class="floating-orb orb-2"></div>
+    </div>
+
+    <!-- RIGHT SIDE AUTH CARD -->
+    <div class="auth-card">
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" data-target="login">Login</button>
+        <button class="tab-btn" data-target="register">Register</button>
+        <span class="tab-indicator"></span>
+      </div>
+
+      <div class="forms-area">
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" class="auth-form active" novalidate>
+          <h2>Welcome back 👋</h2>
+          <p class="form-subtitle">Login to continue</p>
+
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" placeholder="you@example.com" />
+            <small class="error" data-error-for="loginEmail"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <div class="password-wrapper">
+              <input type="password" id="loginPassword" placeholder="••••••••" />
+              <button type="button" class="toggle-password" data-target="loginPassword">Show</button>
+            </div>
+            <small class="error" data-error-for="loginPassword"></small>
+          </div>
+
+          <div class="form-footer">
+            <label class="remember">
+              <input type="checkbox" id="rememberMe" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn primary-btn">Login</button>
+        </form>
+
+        <!-- REGISTER FORM -->
+        <form id="registerForm" class="auth-form" novalidate>
+          <h2>Create account ✨</h2>
+          <p class="form-subtitle">Join the platform</p>
+
+          <div class="form-group">
+            <label for="regName">Full Name</label>
+            <input type="text" id="regName" placeholder="Your Name" />
+            <small class="error" data-error-for="regName"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="regEmail">Email</label>
+            <input type="email" id="regEmail" placeholder="you@example.com" />
+            <small class="error" data-error-for="regEmail"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="regPassword">Password</label>
+            <div class="password-wrapper">
+              <input type="password" id="regPassword" placeholder="Min. 6 characters" />
+              <button type="button" class="toggle-password" data-target="regPassword">Show</button>
+            </div>
+            <small class="error" data-error-for="regPassword"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="regConfirm">Confirm Password</label>
+            <div class="password-wrapper">
+              <input type="password" id="regConfirm" placeholder="Re-type password" />
+              <button type="button" class="toggle-password" data-target="regConfirm">Show</button>
+            </div>
+            <small class="error" data-error-for="regConfirm"></small>
+          </div>
+
+          <button type="submit" class="btn primary-btn">Create Account</button>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
